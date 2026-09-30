@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КосмоСвіт — Головна | Лабораторна робота №1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайту (Flexbox) -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">🚀 КосмоСвіт</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Головна</a></li>
+          <li><a href="gallery.html" class="nav-link">Галерея</a></li>
+          <li><a href="contact.html" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero-блок (Flexbox) -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Таємниці та велич Сонячної системи</h1>
+        <p>
+          Досліджуйте дивовижні планети-гіганти, таємничі супутники, кратери Марса та далекі галактики. 
+          Дізнайтеся, як влаштований наш космічний дім та які місії людство запускає прямо зараз.
+        </p>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <a href="gallery.html" class="btn">Відкрити фотогалерею 🪐</a>
+          <a href="contact.html" class="btn btn-secondary">Підписатися на дайджест 📬</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Вид на Землю з космосу вночі">
+      </div>
+    </section>
+
+    <!-- Секція огляду планет (Flexbox) -->
+    <section class="cards-section">
+      <h2>Цікаві факти про планети</h2>
+      <div class="cards-container">
+        
+        <article class="card">
+          <h3>Венера: Пекельний світ</h3>
+          <p>
+            Найгарячіша планета системи (+465°C) через щільну атмосферу з вуглекислого газу. 
+            Один день на Венері триває довше, ніж її рік, а Сонце тут сходить на заході.
+          </p>
+          <a href="gallery.html" class="btn-detail" style="margin-top: 15px;">Всі планети в галереї →</a>
+        </article>
+
+        <article class="card">
+          <h3>Марс: Вулкан Олімп</h3>
+          <p>
+            На Червоній планеті розташований вулкан Олімп заввишки 21.9 км. 
+            Він утричі вищий за земний Еверест і є найбільшою горою в усій Сонячній системі.
+          </p>
+          <a href="details.html?id=mars" class="btn-detail" style="margin-top: 15px;">Докладніше про Марс →</a>
+        </article>
+
+        <article class="card">
+          <h3>Юпітер: Цар планет</h3>
+          <p>
+            Найбільша планета, всередині якої могли б поміститися понад 1 300 таких планет, як Земля. 
+            Його шторм «Велика Червона Пляма» вирує вже понад 350 років.
+          </p>
+          <a href="details.html?id=jupiter" class="btn-detail" style="margin-top: 15px;">Докладніше про Юпітер →</a>
+        </article>
+
+        <article class="card">
+          <h3>Сатурн: Планета на воді</h3>
+          <p>
+            Сатурн має найменшу середню густину серед усіх планет — всього 0.69 г/см³. 
+            Якби існував велетенський океан, цей газовий гігант плавав би на його поверхні!
+          </p>
+          <a href="details.html?id=saturn" class="btn-detail" style="margin-top: 15px;">Докладніше про Сатурн →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Секція рекордів Сонячної системи (Flexbox) -->
+    <section class="facts-section">
+      <h2>Космічні рекорди у цифрах</h2>
+      <div class="facts-grid">
+        
+        <div class="fact-item">
+          <div class="fact-number">4.5 млрд</div>
+          <div class="fact-label">Років тому утворилася Сонячна система</div>
+        </div>
+
+        <div class="fact-item">
+          <div class="fact-number">2 100 км/год</div>
+          <div class="fact-label">Швидкість надзвукових вітрів на Нептуні</div>
+        </div>
+
+        <div class="fact-item">
+          <div class="fact-number">146</div>
+          <div class="fact-label">Відкритих супутників у Сатурна (рекорд системи)</div>
+        </div>
+
+        <div class="fact-item">
+          <div class="fact-number">1.5 млн км</div>
+          <div class="fact-label">Відстань до орбіти телескопа James Webb</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Секція сучасних місій (Flexbox) -->
+    <section class="cards-section" style="padding-top: 0;">
+      <h2>Сучасні дослідницькі місії</h2>
+      <div class="cards-container">
+        
+        <article class="card" style="flex: 1 1 320px;">
+          <h3>🔬 Марсохід Perseverance (NASA)</h3>
+          <p>
+            Автоматизований ровер шукає ознаки стародавнього життя у висохлій дельті кратера Єзеро, 
+            збирає зразки ґрунту в герметичні титанові капсули та тестує отримання кисню з марсіанського повітря.
+          </p>
+        </article>
+
+        <article class="card" style="flex: 1 1 320px;">
+          <h3>🔭 Обсерваторія James Webb (JWST)</h3>
+          <p>
+            Гігантське покрите золотом дзеркало діаметром 6.5 метрів уловлює інфрачервоне світло від перших зір і галактик, 
+            що народилися через кілька сотень мільйонів років після Великого вибуху.
+          </p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Підвал сайту -->
+  <footer>
+    <div class="container">
+      <p>© 2026 КосмоСвіт. Лабораторна робота з веб-технологій (Flexbox & CSS Grid).</p>
+    </div>
+  </footer>
+
+</body>
+</html>

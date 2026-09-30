@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>КосмоСвіт — Галерея планет і космосу | CSS Grid</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайту (Flexbox) -->
+  <header>
+    <div class="container nav-container">
+      <div class="logo">🚀 КосмоСвіт</div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Головна</a></li>
+          <li><a href="gallery.html" class="nav-link active">Галерея</a></li>
+          <li><a href="contact.html" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Атлас планет та Глибокого Космосу</h1>
+    <p class="page-subtitle">Натисніть на будь-яку картку, щоб відкрити розширену інформацію та фотографії</p>
+
+    <!-- Сітка галереї (CSS GRID 3x3) -->
+    <section class="gallery-section">
+      <div class="gallery-grid">
+
+        <!-- Картка 1: Марс -->
+        <article class="gallery-item">
+          <a href="details.html?id=mars">
+            <img src="images/mars.jpg" alt="Планета Марс" loading="lazy">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Планета земної групи</span>
+            <h3><a href="details.html?id=mars">Марс</a></h3>
+            <p>Червона пустельна планета з тонкою атмосферою та полярними шапками з водяного льоду і сухого льоду.</p>
+            <ul class="item-specs">
+              <li><strong>Діаметр:</strong> 6 779 км (у 2 рази менший за Землю)</li>
+              <li><strong>Супутники:</strong> Фобос і Деймос</li>
+              <li><strong>Особливість:</strong> Каньйон Долина Марінера завдовжки 4 000 км</li>
+            </ul>
+            <a href="details.html?id=mars" class="btn-detail">Читати детальніше про Марс →</a>
+          </div>
+        </article>
+
+        <!-- Картка 2: Юпітер -->
+        <article class="gallery-item">
+          <a href="details.html?id=jupiter">
+            <img src="images/jupiter.jpg" alt="Планета Юпітер" loading="lazy">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Газовий гігант</span>
+            <h3><a href="details.html?id=jupiter">Юпітер</a></h3>
+            <p>Найвеличніша планета Сонячної системи, складена переважно з водню та гелію, зі швидким обертанням навколо осі.</p>
+            <ul class="item-specs">
+              <li><strong>Діаметр:</strong> 139 820 км (в 11 разів більший за Землю)</li>
+              <li><strong>Тривалість доби:</strong> Всього 9 годин 55 хвилин</li>
+              <li><strong>Супутники:</strong> 95 відкритих (зокрема Європа та Ганімед)</li>
+            </ul>
+            <a href="details.html?id=jupiter" class="btn-detail">Читати детальніше про Юпітер →</a>
+          </div>
+        </article>
+
+        <!-- Картка 3: Сатурн -->
+        <article class="gallery-item">
+          <a href="details.html?id=saturn">
+            <img src="images/saturn.jpg" alt="Планета Сатурн та кільця">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Газовий гігант</span>
+            <h3><a href="details.html?id=saturn">Сатурн</a></h3>
+            <p>Шоста планета від Сонця, знаменита розкішною системою кілець, що складаються з мільярдів крижаних уламків.</p>
+            <ul class="item-specs">
+              <li><strong>Ширина кілець:</strong> До 282 000 км (товщина ~10-100 м)</li>
+              <li><strong>Супутники:</strong> 146 (рекордсмен системи)</li>
+              <li><strong>Головний супутник:</strong> Титан — має річки та озера з метану</li>
+            </ul>
+            <a href="details.html?id=saturn" class="btn-detail">Читати детальніше про Сатурн →</a>
+          </div>
+        </article>
+
+        <!-- Картка 4: Нептун -->
+        <article class="gallery-item">
+          <a href="details.html?id=neptune">
+            <img src="images/neptune.jpg" alt="Планета Нептун">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Крижаний гігант</span>
+            <h3><a href="details.html?id=neptune">Нептун</a></h3>
+            <p>Найвіддаленіша планета Сонячної системи. Атмосферний метан надає їй глибокого насиченого лазурового кольору.</p>
+            <ul class="item-specs">
+              <li><strong>Відстань від Сонця:</strong> 4.5 млрд км (30 а.о.)</li>
+              <li><strong>Швидкість вітру:</strong> До 2 100 км/год (надзвукові бурі)</li>
+              <li><strong>Рік на Нептуні:</strong> 165 земних років</li>
+            </ul>
+            <a href="details.html?id=neptune" class="btn-detail">Читати детальніше про Нептун →</a>
+          </div>
+        </article>
+
+        <!-- Картка 5: Місяць -->
+        <article class="gallery-item">
+          <a href="details.html?id=moon">
+            <img src="images/moon.jpg" alt="Місяць">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Природний супутник</span>
+            <h3><a href="details.html?id=moon">Місяць</a></h3>
+            <p>Єдиний природний супутник нашої планети та єдине позаземне тіло, на поверхні якого ступала нога людини.</p>
+            <ul class="item-specs">
+              <li><strong>Відстань від Землі:</strong> ~384 400 км</li>
+              <li><strong>Гравітація:</strong> В 6 разів слабша за земну</li>
+              <li><strong>Особливість:</strong> Сліди астронавтів зберігатимуться мільйони років</li>
+            </ul>
+            <a href="details.html?id=moon" class="btn-detail">Читати детальніше про Місяць →</a>
+          </div>
+        </article>
+
+        <!-- Картка 6: Земля та МКС -->
+        <article class="gallery-item">
+          <a href="details.html?id=iss">
+            <img src="images/iss.jpg" alt="Земля та станція МКС">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Орбітальна станція</span>
+            <h3><a href="details.html?id=iss">Земля та МКС</a></h3>
+            <p>Міжнародна космічна станція — найбільша наукова лабораторія людства у навколоземному просторі на висоті 400 км.</p>
+            <ul class="item-specs">
+              <li><strong>Швидкість польоту:</strong> 27 600 км/год (7.66 км/с)</li>
+              <li><strong>Оберт навколо Землі:</strong> Кожні 90 хвилин</li>
+              <li><strong>Світанки:</strong> Екіпаж спостерігає 16 сходів Сонця на добу</li>
+            </ul>
+            <a href="details.html?id=iss" class="btn-detail">Читати детальніше про МКС →</a>
+          </div>
+        </article>
+
+        <!-- Картка 7: Галактика Андромеди -->
+        <article class="gallery-item">
+          <a href="details.html?id=andromeda">
+            <img src="images/andromeda.jpg" alt="Галактика Андромеди">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Спіральна галактика</span>
+            <h3><a href="details.html?id=andromeda">Галактика Андромеди</a></h3>
+            <p>Найближча гігантська спіральна сусідка Чумацького Шляху, видима на темному небі навіть неозброєним оком.</p>
+            <ul class="item-specs">
+              <li><strong>Відстань:</strong> 2.5 мільйони світлових років</li>
+              <li><strong>Кількість зір:</strong> Близько 1 трильйона</li>
+              <li><strong>Рух:</strong> Наближається до нас зі швидкістю 110 км/с</li>
+            </ul>
+            <a href="details.html?id=andromeda" class="btn-detail">Читати детальніше про Андромеду →</a>
+          </div>
+        </article>
+
+        <!-- Картка 8: Туманність Бульбашка -->
+        <article class="gallery-item">
+          <a href="details.html?id=nebula">
+            <img src="images/nebula.jpg" alt="Туманність Бульбашка NGC 7635">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Емісійна туманність</span>
+            <h3><a href="details.html?id=nebula">Туманність Бульбашка</a></h3>
+            <p>Гігантська газова сфера у сузір'ї Кассіопеї, що роздувається зоряним вітром масивної зірки, у 45 разів більшої за Сонце.</p>
+            <ul class="item-specs">
+              <li><strong>Діаметр бульбашки:</strong> 7 світлових років</li>
+              <li><strong>Відстань від Землі:</strong> 7 100 світлових років</li>
+              <li><strong>Температура плазми:</strong> Понад 10 000 °C</li>
+            </ul>
+            <a href="details.html?id=nebula" class="btn-detail">Читати детальніше про туманність →</a>
+          </div>
+        </article>
+
+        <!-- Картка 9: Дослідження космосу -->
+        <article class="gallery-item">
+          <a href="details.html?id=rocket">
+            <img src="images/rocket.jpg" alt="Запуск ракети Falcon Heavy">
+          </a>
+          <div class="gallery-desc">
+            <span class="card-tag">Космічні технології</span>
+            <h3><a href="details.html?id=rocket">Місії у Глибокий Космос</a></h3>
+            <p>Сучасні багаторазові надважкі ракети виводять супутники нового покоління та готують пілотовані польоти на Місяць і Марс.</p>
+            <ul class="item-specs">
+              <li><strong>Програма Artemis:</strong> Повернення людей на Місяць у 2026 році</li>
+              <li><strong>Ціль:</strong> Створення постійної місячної бази Gateway</li>
+              <li><strong>Майбутнє:</strong> Підготовка першої пілотованої експедиції на Марс</li>
+            </ul>
+            <a href="details.html?id=rocket" class="btn-detail">Читати детальніше про ракети →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Підвал сайту -->
+  <footer>
+    <div class="container">
+      <p>© 2026 КосмоСвіт. Лабораторна робота з веб-технологій (Flexbox & CSS Grid).</p>
+    </div>
+  </footer>
+
+</body>
+</html>
